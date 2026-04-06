@@ -1,0 +1,12 @@
+ratelimiter:
+  capacity: 10
+  refill-rate-per-second: 2.0
+  idle-threshold-seconds: 300
+
+  cleanup-interval-ms: 60000
+
+spring:
+  application:
+    name: rate-limiter-gateway
+server:
+  port: 8080
